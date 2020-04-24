@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_large">
+
+            <TextView
+                android:id="@+id/available_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/available"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_xsmall"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_large"/>
+
+            <Button
+                android:id="@+id/getsnack_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:text="@string/getsnack"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_small"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingEnd="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"/>
+            <Button
+                android:id="@+id/givesnack_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:text="@string/givesnack"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingEnd="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"/>
+            <Button
+                android:id="@+id/additem_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:text="@string/addsnack"
+                android:paddingStart="@dimen/padding_medium"
+                android:paddingEnd="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
