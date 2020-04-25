@@ -9,6 +9,10 @@ public class SharedPrefs {
 
     private static final String USER_ID = "user_id";
 
+    public SharedPrefs(Context context){
+        this.mContext = context;
+    }
+
     private int getIntPreference(String key, int value){
 
         SharedPreferences mPrefs = mContext.getSharedPreferences(Constants.SHARED_PREFERENCES_FILE, Context.MODE_PRIVATE);
@@ -21,14 +25,11 @@ public class SharedPrefs {
         mEditor.apply();
 
     }
-
-    public int returnUserId(Context context){
-        mContext = context;
+    public int returnUserId(){
         return getIntPreference(USER_ID, 0);
     }
 
-    public void setUserId(Context context){
-        mContext = context;
+    public void setUserId(){
         setIntPreference(USER_ID, 0);
     }
 }

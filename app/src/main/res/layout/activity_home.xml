@@ -20,7 +20,7 @@
 
             <TextView
                 android:id="@+id/available_text"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/available"
                 android:textAlignment="center"
@@ -53,7 +53,8 @@
                 android:paddingStart="@dimen/padding_medium"
                 android:paddingEnd="@dimen/padding_medium"
                 android:layout_marginTop="@dimen/margin_small"
-                android:layout_marginBottom="@dimen/margin_small"/>
+                android:layout_marginBottom="@dimen/margin_small"
+                android:visibility="gone"/>
             <Button
                 android:id="@+id/additem_button"
                 android:layout_width="wrap_content"
@@ -66,7 +67,8 @@
                 android:paddingStart="@dimen/padding_medium"
                 android:paddingEnd="@dimen/padding_medium"
                 android:layout_marginTop="@dimen/margin_small"
-                android:layout_marginBottom="@dimen/margin_medium" />
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:visibility="gone"/>
         </LinearLayout>
     </FrameLayout>
 

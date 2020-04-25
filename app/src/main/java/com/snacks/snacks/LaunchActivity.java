@@ -23,7 +23,8 @@ public class LaunchActivity extends AppCompatActivity {
     private void startApp(){
         Integer userId;
 
-        userId = mPrefs.returnUserId(mContext);
+        mPrefs = new SharedPrefs(mContext);
+        userId = mPrefs.returnUserId();
 
         if (userId != null && userId > 0){
             Intent intent = new Intent(this, HomeActivity.class);
